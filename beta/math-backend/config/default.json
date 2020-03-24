@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "saber",
+  "Access-Control-Allow-Origin" : "*"
+}
