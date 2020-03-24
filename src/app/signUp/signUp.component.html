@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content = "width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title> Registration Form</title>
+     <link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrit>
+</head>
+<body>
+ <div id="wrapper">
+  <div class="form-container">
+   <span class="form-heading">Sign Up</span>
+     <form >
+        <div class="error">{{ _error }}</div>
+         <div class="input-group">
+             <i class="fas fa-user"></i>
+             <input type="text" placeholder="Username..." value="" id="name"  name = "name" required>
+             <span class="bar"></span>
+         </div>
+         <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email..." value="" id="email" name = "email" required>
+                <span class="bar"></span>
+            </div>
+            <div class="input-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password..." value="" id="password" name="password" required>
+                    <span class="bar"></span>
+                </div>
+
+                <div class="input-group">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Confirm password..." value="" id="Con_password" name = "confirmation_password" required>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="input-group">
+                        <button (click)="register()" >
+                             <i class="fab fa-telegram-plane" ></i>
+                        </button>
+                    </div>
+    </form>
+  </div>
+</div>
+</body>
+
+
+</html>
