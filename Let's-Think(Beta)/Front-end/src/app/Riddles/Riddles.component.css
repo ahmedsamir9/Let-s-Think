@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form{
+    height:450px;
+    width: 45%;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1.5rem rgb(39, 161, 2);
+    margin-top:30px;
+    padding-top: 60px;
+    margin-left: 360px;
+}
+.riddles
+{
+    font-size: 21px;
+    text-align: center;
+    font-weight: bolder;
+}
+.card{
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay:0.5s ;
+}
+.animate{
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+@-webkit-keyframes fadeUP{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform:none;
+        transform: none;
+    }
+}
+.fadeUP{
+    -webkit-animation-name: fadeUP;
+    animation-name: fadeUP;
+}
+.input-group{
+    height: 40px;
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    margin-top: 180px;
+    margin-left: 15px;
+}
+.input-group input{
+    position: relative;
+    width: 35%;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    color: #73d04d;
+}
+.input-group > i {
+    font-size: 1rem;
+    margin-right: 0rem;
+    color: #73d04d;
+}
+.input-group .bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 35%;
+    height: 1px;
+}
+.input-group .bar::before{
+    content: "";
+    position: absolute;
+    background-color: #73d04d;
+    width: 0;
+    height: 2px;
+    transition: width 650ms;
+}
+.input-group input:focus + .bar::before{
+    width: 100%;
+}
+.button{
+    margin-left: 28px;
+    margin-top: 20px;
+    border: 2px solid white;
+    padding:13px 26px;
+    overflow: hidden;
+    border-radius: 20px;
+    color: white;
+    background-color:#38873d;
+    font-size: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-align: center;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  } 
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  }
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.btn{
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 1s;
+    animation-delay:1.5s ;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+button:hover {
+    animation-name: background-color;
+  }
+  @keyframes background-color{
+    100%{
+      color: #73d04d;
+      background-color: #fff;
+    }
+  }
+@-webkit-keyframes fadeUP{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform:none;
+        transform: none;
+    }
+}
+.fadeUP{
+    -webkit-animation-name: fadeUP;
+    animation-name: fadeUP;
+}
+.Answer{
+    font-size: 17px;
+    padding-left: 240px;
+    margin-top: -37px;
+    color: #38873d;
+    font-weight: bold;
+}
+
+@-webkit-keyframes fadeRight{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(100%,100%,0);
+        transform: translate3d(100%,20%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform:none;
+        transform: none;
+    }
+}
+.fadeRight{
+    -webkit-animation-name: fadeRight;
+    animation-name: fadeRight;
+}
+.submit{
+    margin-top: -250px;
+    margin-left: 250px;
+    font-size: 25px;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 13px;
+    padding-bottom: 5px;
+    font: #fff;
+    background-color: #38873d;
+}
+.score{
+    border-radius: 40px;
+    height: 70px;
+    width: 130px;
+    background-color: #58D68D;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-left: 100px;
+    color: #fff;
+     padding-top: 16px;
+    text-align: center;
+}
+
+
+
+.box-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background:#38873d;
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+.box-area li:nth-child(1){
+    left:86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(2){
+    left:12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+.box-area li:nth-child(3){
+    left:70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+.box-area li:nth-child(4){
+    left:42%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+.box-area li:nth-child(5){
+    left:65%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(6){
+    left:15%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 2s;
+}
+.box-area li:nth-child(7){
+    left:30%;
+    width: 50px;
+    height: 60px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(8){
+    left:10%;
+    width: 120px;
+    height: 130px;
+    animation-delay: 1.5s;
+}
+.box-area li:nth-child(9){
+    left:15%;
+    width: 80px;
+    height: 100px;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(10){
+    left:60%;
+    width: 140px;
+    height: 100px;
+    animation-delay: 1s;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+    0%,100%{
+        color:#fff;
+        filter:blur(2px);
+        box-shadow:0 0 10px #54FF9F,0 0 5px #000
+        ,0 0 10px #fff;
+
+    }
+    5%,95%{
+        color:#111;
+        filter:blur(0px);
+    }
+}
+
+.animate .score{
+    -webkit-animation-duration: 10s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+.submit{
+    -webkit-animation-delay: 5s;
+    -moz-animation-delay: 5s;
+    animation-delay:8s ;
+}
+@-webkit-keyframes fadeup{
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(100%,100%,0);
+    }
+    to{
+        opacity: 1;
+        -webkit-transform:none;
+        transform: none;
+    }
+}
+.fadeup{
+    -webkit-animation-name: fadeUP;
+    animation-name: fadeUP;
+}

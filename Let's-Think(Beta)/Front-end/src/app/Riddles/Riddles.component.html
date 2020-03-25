@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href = "https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrit>
+</head>
+<body> 
+  <div class="card animate fadeUP">
+    <div class="animation-area">
+      <ul class="box-area">
+         <li></li>
+         <li></li>
+         <li></li>
+      </ul>
+     </div>
+    <div class="score animate fadeup">
+      <h1> {{Score}}  </h1>
+     </div>
+    <form class="container">
+        <div class="riddle">
+        <p class="riddles">
+           {{getRiddles()}}
+        </p>
+      </div>
+        <div class="input-group">
+          <input type="text" placeholder="Answer..." required>
+          <span class="bar"></span>
+      </div>
+
+        <div>
+        <button class="submit" (click)="calculate_score()"> 
+           <i class="fab fa-telegram-plane"></i> 
+        </button>
+      </div> 
+
+      <div class="btn fadeUP">
+        <button class="button" (click)="toggelshowed()"> <span>Show Answer</span></button> 
+      </div>  
+     
+      <div>
+       <h1 class="Answer animate fadeRight" *ngIf="showed">
+         {{getAnswer()}}
+       </h1>
+      </div>
+    </form>
+    </div>
+</body>
+</html> 
