@@ -14,11 +14,6 @@ body{
     height:100vh;
     font-family:New Century Schoolbook, serif;
 }
-.tog{
-    background-color: transparent;
-    border: none;
-    outline-color: transparent;
-}
 .wrapper{
     position:absolute;
     top:40%;
@@ -29,37 +24,13 @@ body{
 h1{
     font-size:70px;
     text-shadow:0px 7px 10px #000;
+    margin-top: -30px;
+    margin-left: -70px;
 }
 h2{
     font-size:35px;
     font-weight: bold;   
-}
-h4 span{
-   position: relative;
-   display: inline-block;
-   animation: bounce 0.3s ease infinite alternate;
-   font-family: 'Titan one',cursive;
-   font-size: 50px;
-   text-decoration: underline;
-   padding-top:7px ;
-   color: #000;
-   text-shadow: 0 1px 0 #ccc,
-                0 2px 0 #ccc,
-                0 3px 0 #ccc,
-                0 4px 0 #ccc,
-                0 5px 0 #ccc,
-                0 9px 0 transparent,
-                0 10px 10px rgba(0,0,0,0.4);
-}
-h4 span:nth-child(1){animation-delay: 1s;}
-@keyframes bounce{
-    100%{
-        top: -20px;
-        text-shadow: 0 1px 0 #ccc,
-                     0 2px 0 #ccc,
-                     0 20px 50px rgba(0, 0, 0, 5),
-        ;
-    }
+    margin-left: -70px;
 }
 .animation-area{
     background: linear-gradient(to right,#196F3D,#58D68D);
@@ -159,3 +130,39 @@ h4 span:nth-child(1){animation-delay: 1s;}
         filter:blur(0px);
     }
 }
+.Equations{
+    font-size :32px;
+    margin-top: 15px;
+    margin-left: -220px;
+    border-radius: 18px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    border: none;
+    box-shadow: 0 1px 1.5rem rgb(252, 253, 252);
+}
+.Rid{
+    font-size :32px;
+    margin-left: 660px;
+    margin-top: 280px;
+    border-radius: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    position:absolute;
+    text-align:center;
+    box-shadow: 0 1px 1.5rem rgb(252, 253, 252);
+}
+.Rid:hover  {
+   font-size: 38px; 
+  }
+  .Equations:hover  {
+    font-size: 38px; 
+   }
+  
