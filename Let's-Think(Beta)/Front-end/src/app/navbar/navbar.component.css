@@ -11,7 +11,7 @@
     margin-left: 640px;
 }
 .navbar-nav li a {
-    margin-left: 20px;
+    margin-left: 10px;
     font-style: italic;   
  } 
  .app-name{    
@@ -26,4 +26,13 @@
  img{
      margin-top: -25px;
      margin-left: 10px;
+ }
+ .navbar-nav .pro_img{
+    width: 27px;
+	height: 27px;
+	border-radius: 50%;
+	position: absolute;
+    box-shadow: 0px  0px 0px 1px #fff;
+    margin-top: 8px;
+    margin-right: 10px;
  }

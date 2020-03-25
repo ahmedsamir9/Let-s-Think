@@ -12,6 +12,7 @@ import { aboutUs } from './aboutUs/AboutUs.component';
 import {Game} from './Game/Game.component';
 import {CommonModule} from '@angular/common' ; 
 import {FormsModule} from '@angular/forms' ;
+import { Profile } from './Profile/Profile.component';
 import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http'
     navbar,
     Home,
     Game,
+    Profile,
     // signUpService
   ],
   imports: [
@@ -37,6 +39,7 @@ import { HttpClientModule } from '@angular/common/http'
       {path :'Home', component : Home} ,
       {path :'AboutUs', component : aboutUs} ,
       {path :'Game', component : Game} ,
+      {path :'Profile', component : Profile} ,
       {path :'', redirectTo :'Home' ,pathMatch:'full'}
     ])
   ],
