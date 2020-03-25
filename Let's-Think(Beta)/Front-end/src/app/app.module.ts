@@ -10,6 +10,7 @@ import { navbar } from './navbar/navbar.component';
 import { Home } from './Home/home.component';
 import { aboutUs } from './aboutUs/AboutUs.component';
 import {Game} from './Game/Game.component';
+import {Riddles} from './Riddles/Riddles.component';
 import {CommonModule} from '@angular/common' ; 
 import {FormsModule} from '@angular/forms' ;
 import { Profile } from './Profile/Profile.component';
@@ -25,6 +26,7 @@ import { HttpClientModule } from '@angular/common/http'
     Home,
     Game,
     Profile,
+    Riddles
     // signUpService
   ],
   imports: [
@@ -39,6 +41,7 @@ import { HttpClientModule } from '@angular/common/http'
       {path :'Home', component : Home} ,
       {path :'AboutUs', component : aboutUs} ,
       {path :'Game', component : Game} ,
+      {path :'Riddles', component : Riddles} ,
       {path :'Profile', component : Profile} ,
       {path :'', redirectTo :'Home' ,pathMatch:'full'}
     ])
