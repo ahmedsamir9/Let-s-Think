@@ -10,7 +10,7 @@ form{
     background-color: #fff;
     border-radius: 1rem;
     box-shadow: 0 1px 1.5rem rgb(39, 161, 2);
-    margin-top:30px;
+    margin-top:-20px;
     padding-top: 60px;
     margin-left: 360px;
 }
@@ -61,8 +61,9 @@ form{
     width: 35%;
     border: none;
     outline: none;
-    font-size: 2rem;
-    color: #73d04d;
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
 }
 .input-group > i {
     font-size: 1rem;
@@ -145,7 +146,7 @@ button:hover {
 @-webkit-keyframes fadeUP{
     from{
         opacity: 0;
-        -webkit-transform: translate3d(0%,100%,0);
+        -webkit-transform: translate3d(100%,100%,0);
         transform: translate3d(100%,100%,0);
     }
     to{
@@ -165,12 +166,11 @@ button:hover {
     color: #38873d;
     font-weight: bold;
 }
-
 @-webkit-keyframes fadeRight{
     from{
         opacity: 0;
         -webkit-transform: translate3d(100%,100%,0);
-        transform: translate3d(100%,20%,0);
+        transform: translate3d(100%,100%,0);
     }
     to{
         opacity: 1;
@@ -195,15 +195,15 @@ button:hover {
     background-color: #38873d;
 }
 .score{
-    border-radius: 40px;
-    height: 70px;
-    width: 130px;
-    background-color: #58D68D;
+    border-radius: 150px;
+    height: 90px;
+    width: 100px;
+    background-color: #38873d;
     font-size: 25px;
-    margin-top: -10px;
-    margin-left: 100px;
+    margin-top: 10px;
+    margin-left: 50px;
     color: #fff;
-     padding-top: 16px;
+    padding-top: 18px;
     text-align: center;
 }
 .box-area li {
@@ -308,15 +308,21 @@ button:hover {
     -webkit-animation-fill-mode: both;
 }
 .submit{
+    color: white;
     -webkit-animation-delay: 5s;
     -moz-animation-delay: 5s;
     animation-delay:8s ;
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 25px;
+    padding: 15px 15px 45px 15px ;
 }
 @-webkit-keyframes fadeup{
     from{
         opacity: 0;
         -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0%,100%,0);
+        transform: translate3d(100%,100%,0);
     }
     to{
         opacity: 1;
