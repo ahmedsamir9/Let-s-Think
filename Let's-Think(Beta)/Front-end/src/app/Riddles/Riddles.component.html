@@ -22,21 +22,31 @@
            {{getRiddles()}}
         </p>
       </div>
-        <div class="input-group">
-          <input type="text" placeholder="Answer..." required>
-          <span class="bar"></span>
+    <div class="animate fadeUP">
+      <div class="Ans_Left">
+      <label class="container">{{getChoices()[0]}}
+        <input type="radio"  name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">{{getChoices()[1]}}
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+       </div>
+      <div class="Ans_Right">
+      <label class="container">{{getChoices()[2]}}
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">{{getChoices()[3]}}
+        <input  type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
       </div>
-
-        <div>
-        <button class="submit" (click)="calculate_score()"> 
-           <i class="fab fa-telegram-plane"></i> 
-        </button>
-      </div> 
-
+    </div>
       <div class="btn fadeUP">
         <button class="button" (click)="toggelshowed()"> <span>Show Answer</span></button> 
       </div>  
-     
       <div>
        <h1 class="Answer animate fadeRight" *ngIf="showed">
          {{getAnswer()}}

@@ -3,7 +3,7 @@
 <body> <div class="wrapper">
     <h1> LET'S THINK </h1>
     <h2> Welcome to Our Website </h2>
-    <button class="Equations" routerLinkActive="active" [routerLink]="['/Game']" >
+    <button class="Equations" routerLinkActive="active" [routerLink]="['/Game']" *ngIf="flag" >
        Equations
     </button>
     </div>
@@ -14,7 +14,7 @@
             <li></li>
             <li></li> 
          </ul>
-          <button class="Rid" routerLinkActive="active" [routerLink]="['/Riddles']" >
+          <button class="Rid" routerLinkActive="active" [routerLink]="['/Riddles']" *ngIf="flag">
              Riddles
           </button>
         </div>

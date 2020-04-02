@@ -16,7 +16,8 @@ form{
     box-shadow: 0 1px 1.5rem rgb(39, 161, 2);
     margin-top: -20px;
     padding-top: 60px;
-    margin-left: 360px;
+    margin-left: 420px;
+    text-align: center;
 }
 #score{
     padding-top: 25px;
@@ -89,8 +90,8 @@ form{
     width: 150px;
     height:100px;
     background: rgba(0, 0, 0, 0.2);
-    margin-right: 280px;
-    margin-top: 270px;
+    margin-right: 353px;
+    margin-top: 250px;
     border-radius: 45%;
     box-shadow: 0 5px 15px -5px #000000;
     color: black;

@@ -11,8 +11,8 @@ form{
     border-radius: 1rem;
     box-shadow: 0 1px 1.5rem rgb(39, 161, 2);
     margin-top:-20px;
-    padding-top: 60px;
-    margin-left: 360px;
+    padding-top: 25px;
+    margin-left: 420px;
 }
 .riddles
 {
@@ -31,67 +31,10 @@ form{
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }
-@-webkit-keyframes fadeUP{
-    from{
-        opacity: 0;
-        -webkit-transform: translate3d(0,100%,0);
-        transform: translate3d(0,100%,0);
-    }
-    to{
-        opacity: 1;
-        -webkit-transform:none;
-        transform: none;
-    }
-}
-.fadeUP{
-    -webkit-animation-name: fadeUP;
-    animation-name: fadeUP;
-}
-.input-group{
-    height: 40px;
-    width: 80%;
-    position: relative;
-    display: flex;
-    align-items: baseline;
-    margin-top: 180px;
-    margin-left: 15px;
-}
-.input-group input{
-    position: relative;
-    width: 35%;
-    border: none;
-    outline: none;
-    font-size: 1.5rem;
-    color: black;
-    text-align: center;
-}
-.input-group > i {
-    font-size: 1rem;
-    margin-right: 0rem;
-    color: #73d04d;
-}
-.input-group .bar{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    width: 35%;
-    height: 1px;
-}
-.input-group .bar::before{
-    content: "";
-    position: absolute;
-    background-color: #73d04d;
-    width: 0;
-    height: 2px;
-    transition: width 650ms;
-}
-.input-group input:focus + .bar::before{
-    width: 100%;
-}
+
 .button{
-    margin-left: 28px;
-    margin-top: 20px;
+    margin-left: 60px;
+    margin-top: 30px;
     border: 2px solid white;
     padding:13px 26px;
     overflow: hidden;
@@ -118,7 +61,7 @@ form{
     transition: 0.5s;
   }
   .button:hover span {
-    padding-right: 25px;
+    padding-right: 23px;
   }
   .button:hover span:after {
     opacity: 1;
@@ -134,15 +77,7 @@ form{
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }
-button:hover {
-    animation-name: background-color;
-  }
-  @keyframes background-color{
-    100%{
-      color: #73d04d;
-      background-color: #fff;
-    }
-  }
+
 @-webkit-keyframes fadeUP{
     from{
         opacity: 0;
@@ -160,8 +95,8 @@ button:hover {
     animation-name: fadeUP;
 }
 .Answer{
-    font-size: 17px;
-    padding-left: 240px;
+    font-size: 18px;
+    padding-left: 270px;
     margin-top: -37px;
     color: #38873d;
     font-weight: bold;
@@ -181,18 +116,6 @@ button:hover {
 .fadeRight{
     -webkit-animation-name: fadeRight;
     animation-name: fadeRight;
-}
-.submit{
-    margin-top: -250px;
-    margin-left: 250px;
-    font-size: 25px;
-    border-radius: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-right: 13px;
-    padding-bottom: 5px;
-    font: #fff;
-    background-color: #38873d;
 }
 .score{
     border-radius: 150px;
@@ -307,17 +230,6 @@ button:hover {
     animation-fill-mode: both;
     -webkit-animation-fill-mode: both;
 }
-.submit{
-    color: white;
-    -webkit-animation-delay: 5s;
-    -moz-animation-delay: 5s;
-    animation-delay:8s ;
-    width: 80px;
-    height: 40px;
-    font-size: 17px;
-    border-radius: 25px;
-    padding: 15px 15px 45px 15px ;
-}
 @-webkit-keyframes fadeup{
     from{
         opacity: 0;
@@ -334,3 +246,62 @@ button:hover {
     -webkit-animation-name: fadeUP;
     animation-name: fadeUP;
 }
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .Ans_Choices{
+      
+  }
+.Ans_Right{
+      margin-left: 400px;
+      margin-top: -95px;
+  }
+.Ans_Left{
+    margin-top: 200px;
+}
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  .container input:checked ~ .checkmark {
+    background-color: #38873d;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
