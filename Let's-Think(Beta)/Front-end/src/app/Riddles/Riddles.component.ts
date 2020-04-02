@@ -28,6 +28,6 @@ export class Riddles {
       }
       getAnswer():string{
         this.answer="Answer Answer Answer ";//El value --> waiting from database
-        return this.answer;
+        return this.answer; 
       }
 }
