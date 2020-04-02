@@ -13,6 +13,11 @@ export class Riddles {
       showed:boolean=false;
       Score:number=0;
       Choices:any=[];
+  
+  
+       toggle_showed(){
+        this.showed=true;
+      }
       getRiddles():string{
           this.riddle=" Riddle Phrase";   //El value --> waiting from database
           return this.riddle;
@@ -24,8 +29,5 @@ export class Riddles {
       getAnswer():string{
         this.answer="Answer Answer Answer ";//El value --> waiting from database
         return this.answer;
-      }
-      toggelshowed(){
-        this.showed=true;
       }
 }
