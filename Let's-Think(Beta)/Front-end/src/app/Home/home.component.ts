@@ -13,7 +13,7 @@ export class Home {
 
      // Show buttons (riddles-equatoins) only when the user is already logged......
     flag:boolean = true; //Logically ((flag = false)),just written ((flag = true)) for showing them in designing step  
-     toggel_buttons(){
+     toggle_buttons(){
      this.flag=!this.flag;
     }
 
